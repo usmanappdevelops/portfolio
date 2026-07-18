@@ -14,9 +14,10 @@ class PersonalInfo {
       'into functional, cross-platform mobile apps. Eager to contribute to a '
       'collaborative team and grow as a full-stack mobile engineer.';
 
-  static const String phone = '+923498373199';
+  //static const String phone = '+923498373199';
+  static const String instagram = 'https://www.instagram.com/usman_app_develops/';
   static const String email = 'usmanappdevelops@gmail.com';
-  static const String address = 'AwanTown Khichiwala, Fortabbas';
+  static const String address = 'Awan Town Khichiwala, Fortabbas';
   static const String github = 'https://github.com/usmanappdevelops';
   static const String linkedin = 'https://www.linkedin.com/in/muhammadusman1168';
   // Profile photo is now bundled locally in the app assets.
@@ -40,6 +41,11 @@ class EducationItem {
 class Education {
   static const List<EducationItem> items = [
     EducationItem(
+      degree: 'Mobile App Development Training',
+      institute: 'Dev Castle – NAVTTC Program',
+      duration: '2026',
+    ),
+    EducationItem(
       degree: 'BS Information Technology',
       institute: 'The Islamia University, BWP',
       duration: '2023 - Present',
@@ -57,28 +63,28 @@ class Education {
   ];
 }
 
-class TrainingItem {
-  final String title;
-  final String duration;
-  final String description;
-  const TrainingItem({
-    required this.title,
-    required this.duration,
-    required this.description,
-  });
-}
+// class TrainingItem {
+//   final String title;
+//   final String duration;
+//   final String description;
+//   const TrainingItem({
+//     required this.title,
+//     required this.duration,
+//     required this.description,
+//   });
+// }
 
-class Training {
-  static const List<TrainingItem> items = [
-    TrainingItem(
-      title: 'Dev Castle – NAVTTC Program',
-      duration: '2025 - 2026',
-      description:
-          'Currently learning Flutter and Dart through project-based '
-          'mobile app development training.',
-    ),
-  ];
-}
+// class Training {
+//   static const List<TrainingItem> items = [
+//     TrainingItem(
+//       title: 'Dev Castle – NAVTTC Program',
+//       duration: '2025 - 2026',
+//       description:
+//           'Currently learning Flutter and Dart through project-based '
+//           'mobile app development training.',
+//     ),
+//   ];
+// }
 
 class CertificationItem {
   final String title;
@@ -127,7 +133,7 @@ class TechnicalSkills {
     ),
     SkillCategory(
       category: 'Tools',
-      skills: ['Git', 'VS Code', 'Android Studio', 'Figma'],
+      skills: ['Git', 'VS Code','Github', 'Android Studio', 'Figma'],
     ),
     SkillCategory(
       category: 'Other',

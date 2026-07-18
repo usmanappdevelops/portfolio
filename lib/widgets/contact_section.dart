@@ -45,7 +45,8 @@ class ContactSection extends StatelessWidget {
                 LayoutBuilder(builder: (context, constraints) {
                   const spacing = 16.0;
                   final itemWidth =
-                      (constraints.maxWidth - (columns - 1) * spacing) / columns;
+                      (constraints.maxWidth - (columns - 1) * spacing) /
+                          columns;
                   final itemHeight = isMobile ? 120.0 : 130.0;
                   final childAspectRatio = itemWidth / itemHeight;
 
@@ -57,12 +58,12 @@ class ContactSection extends StatelessWidget {
                     mainAxisSpacing: spacing,
                     childAspectRatio: childAspectRatio,
                     children: [
-                      _ContactCard(
-                        icon: Icons.phone_outlined,
-                        label: 'Phone',
-                        value: PersonalInfo.phone,
-                        onTap: () => _open('tel:${PersonalInfo.phone}'),
-                      ),
+                      // _ContactCard(
+                      //   icon: Icons.phone_outlined,
+                      //   label: 'Phone',
+                      //   value: PersonalInfo.phone,
+                      //   onTap: () => _open('tel:${PersonalInfo.phone}'),
+                      // ),
                       _ContactCard(
                         icon: Icons.email_outlined,
                         label: 'Email',
@@ -80,6 +81,12 @@ class ContactSection extends StatelessWidget {
                         label: 'LinkedIn',
                         value: 'muhammadusman1168',
                         onTap: () => _open(PersonalInfo.linkedin),
+                      ),
+                      _ContactCard(
+                        icon: Icons.camera_alt_outlined,
+                        label: 'Instagram',
+                        value: 'usman_app_develops',
+                        onTap: () => _open(PersonalInfo.instagram),
                       ),
                     ],
                   );

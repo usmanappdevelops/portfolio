@@ -61,16 +61,16 @@ class _EducationSectionState extends State<EducationSection> {
                   duration: selected.duration,
                   icon: Icons.school_outlined,
                 ),
-                const SizedBox(height: 12),
-                ...Training.items.map(
-                  (t) => _TimelineTile(
-                    title: t.title,
-                    subtitle: t.description,
-                    duration: t.duration,
-                    icon: Icons.rocket_launch_outlined,
-                    highlight: true,
-                  ),
-                ),
+                // const SizedBox(height: 12),
+                // ...Training.items.map(
+                //   (t) => _TimelineTile(
+                //     title: t.title,
+                //     subtitle: t.description,
+                //     duration: t.duration,
+                //     icon: Icons.rocket_launch_outlined,
+                //     highlight: true,
+                //   ),
+                //),
               ],
             ),
           ),
