@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:usman_portfolio/widgets/work_section.dart';
 import '../models/portfolio_data.dart';
 import '../theme/app_theme.dart';
 import '../widgets/hero_section.dart';
@@ -8,6 +9,7 @@ import '../widgets/education_section.dart';
 import '../widgets/certifications_section.dart';
 import '../widgets/contact_section.dart';
 import '../widgets/footer_section.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final GlobalKey _aboutKey = GlobalKey();
   final GlobalKey _skillsKey = GlobalKey();
+  final GlobalKey _workKey = GlobalKey();
   final GlobalKey _educationKey = GlobalKey();
   final GlobalKey _certKey = GlobalKey();
   final GlobalKey _contactKey = GlobalKey();
@@ -65,6 +68,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     PopupMenuItem(
                         value: _skillsKey, child: const Text('Skills')),
                     PopupMenuItem(
+                        value: _workKey, child: const Text('Projects')),
+                    PopupMenuItem(
                         value: _educationKey, child: const Text('Education')),
                     PopupMenuItem(
                         value: _certKey, child: const Text('Certifications')),
@@ -76,6 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
             : [
                 _navButton('About', _aboutKey),
                 _navButton('Skills', _skillsKey),
+                _navButton('Projects', _workKey),
                 _navButton('Education', _educationKey),
                 _navButton('Certifications', _certKey),
                 _navButton('Contact', _contactKey),
@@ -90,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const HeroSection(),
               KeyedSubtree(key: _aboutKey, child: const AboutSection()),
               KeyedSubtree(key: _skillsKey, child: const SkillsSection()),
+              KeyedSubtree(key: _workKey, child: const WorkSection()),
               KeyedSubtree(key: _educationKey, child: const EducationSection()),
               KeyedSubtree(key: _certKey, child: const CertificationsSection()),
               KeyedSubtree(key: _contactKey, child: const ContactSection()),

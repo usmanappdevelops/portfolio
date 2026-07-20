@@ -51,8 +51,8 @@ class AboutSection extends StatelessWidget {
                   runSpacing: 16,
                   children: [
                     _StatChip(number: '5+', label: 'Personal Projects'),
-                    _StatChip(number: '2', label: 'Certifications'),
-                    _StatChip(number: '1+', label: 'Years Learning Flutter'),
+                    _StatChip(number: '3', label: 'Certifications'),
+                    _StatChip(number: '1 year ', label: 'Experience'),
                   ],
                 ),
               ],

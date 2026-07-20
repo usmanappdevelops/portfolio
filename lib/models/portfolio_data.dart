@@ -4,7 +4,8 @@ library portfolio_data;
 
 class PersonalInfo {
   static const String name = 'Muhammad Usman';
-  static const String title = 'Flutter Developer | UI/UX Focused Mobile Engineer';
+  static const String title =
+      'Flutter Developer | UI/UX Focused Mobile Engineer';
   static const String tagline =
       'Turning UI/UX designs into smooth, cross-platform Flutter apps.';
   static const String aboutMe =
@@ -15,11 +16,13 @@ class PersonalInfo {
       'collaborative team and grow as a full-stack mobile engineer.';
 
   //static const String phone = '+923498373199';
-  static const String instagram = 'https://www.instagram.com/usman_app_develops/';
+  static const String instagram =
+      'https://www.instagram.com/usman_app_develops/';
   static const String email = 'usmanappdevelops@gmail.com';
   static const String address = 'Awan Town Khichiwala, Fortabbas';
   static const String github = 'https://github.com/usmanappdevelops';
-  static const String linkedin = 'https://www.linkedin.com/in/muhammadusman1168';
+  static const String linkedin =
+      'https://www.linkedin.com/in/muhammadusman1168';
   // Profile photo is now bundled locally in the app assets.
   static const bool hasProfileImage = true;
   static const String profileImagePath = 'assets/images/profile.png';
@@ -59,6 +62,55 @@ class Education {
       degree: 'Matric',
       institute: 'Govt. High School 185/7.R',
       duration: '2019 - 2021',
+    ),
+  ];
+}
+
+class WorkItem {
+  final String name;
+  final String language;
+
+  final String? note;
+  const WorkItem({
+    required this.name,
+    required this.language,
+    this.note,
+  });
+}
+
+class Work {
+  static const List<WorkItem> items = [
+    WorkItem(
+      name: 'Scientific Calculator',
+      language: 'Flutter & Dart & Firebase',
+    ),
+    WorkItem(
+      name: 'University_app',
+      language: 'Flutter & Dart & Firebase',
+    ),
+    WorkItem(
+      name: 'portfolio',
+      language: 'Flutter & Dart',
+    ),
+    WorkItem(
+      name: 'Chat_app',
+      language: 'Flutter & Dart & Firebase',
+    ),
+    WorkItem(
+      name: 'Cine_audio',
+      language: 'Flutter & Dart & Firebase',
+    ),
+    WorkItem(
+      name: "playstore_UI",
+      language: 'Flutter & Dart',
+    ),
+    WorkItem(
+      name: 'Easypaisa_UI',
+      language: 'Flutter & Dart',
+    ),
+    WorkItem(
+      name: 'currency_converter',
+      language: 'Flutter & Dart',
     ),
   ];
 }
@@ -133,11 +185,15 @@ class TechnicalSkills {
     ),
     SkillCategory(
       category: 'Tools',
-      skills: ['Git', 'VS Code','Github', 'Android Studio', 'Figma'],
+      skills: ['Git', 'VS Code', 'Github', 'Android Studio', 'Figma'],
     ),
     SkillCategory(
       category: 'Other',
-      skills: ['App/Play Store Deployment', 'Push Notifications', 'Google Maps'],
+      skills: [
+        'App/Play Store Deployment',
+        'Push Notifications',
+        'Google Maps'
+      ],
     ),
   ];
 }
